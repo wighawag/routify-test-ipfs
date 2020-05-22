@@ -5,7 +5,7 @@
     "dev": "run-p routify rollup",
     "dev-dynamic": "cross-env BUNDLING=dynamic npm run dev",
     "build": "npm run routify -- -b && rollup -c",
-    "serve": "spassr --serve-spa --serve-ssr",
+    "spa": "spassr --serve-spa --serve-ssr",
     "export": "routify export",
     "build:docker": "npm run build && ./scripts/docker/docker-build.sh",
     "deploy:now": "cd scripts/now && npm run deploy",
@@ -26,6 +26,7 @@
     "rollup-plugin-livereload": "^1.2.0",
     "rollup-plugin-svelte": "^5.2.1",
     "rollup-plugin-terser": "^5.3.0",
+    "serve": "^11.3.1",
     "sirv-cli": "^0.4.5",
     "spassr": "^1.0.2"
   },
