@@ -135,7 +135,7 @@ function prerender() {
 
 function bundledTransform(contents) {
   return contents.toString().replace('__SCRIPT__', `
-	<script defer src="/build/bundle.js" ></script>
+	<script defer src="build/bundle.js" ></script>
 	`)
 }
 

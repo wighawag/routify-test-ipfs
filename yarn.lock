@@ -77,7 +77,7 @@
   dependencies:
     estree-walker "^1.0.1"
 
-"@sveltech/routify@^1.5.9":
+"@sveltech/routify@^1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@sveltech/routify/-/routify-1.7.11.tgz#16b7f936a55a243bcb117fed5a4e8e0bf925702c"
   integrity sha512-w7zlH5CchuVsdoW4m7rKXcGKw0mSi321ZxBYJ4Zb88UNW1FhjTMzO7VfiKfYHMwfrL9xIeCk6TbHjLhAki9BPA==
