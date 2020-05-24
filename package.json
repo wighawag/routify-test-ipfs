@@ -31,7 +31,7 @@
     "spassr": "^1.0.2"
   },
   "dependencies": {
-    "@sveltech/routify": "^1.7.11",
+    "@sveltech/routify": "git://github.com/wighawag/routify.git#ed38d4353d80b86d00b0e71f030928ecf6d418e7",
     "svelte": "^3.20.1"
   }
 }

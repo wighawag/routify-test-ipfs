@@ -6,7 +6,7 @@
    *  Notice the $: prefix swhich makes the statement reactive. This way if the user logs 
    *  out the $goto is called again.
    * **/
-  $: if (!$user) $goto("./login", {}, true);
+  // $: if (!$user) $goto("./login", {}, true);
 
   function logout() {
     $user = false;

@@ -77,10 +77,9 @@
   dependencies:
     estree-walker "^1.0.1"
 
-"@sveltech/routify@^1.7.11":
-  version "1.7.11"
-  resolved "https://registry.yarnpkg.com/@sveltech/routify/-/routify-1.7.11.tgz#16b7f936a55a243bcb117fed5a4e8e0bf925702c"
-  integrity sha512-w7zlH5CchuVsdoW4m7rKXcGKw0mSi321ZxBYJ4Zb88UNW1FhjTMzO7VfiKfYHMwfrL9xIeCk6TbHjLhAki9BPA==
+"@sveltech/routify@git://github.com/wighawag/routify.git#ed38d4353d80b86d00b0e71f030928ecf6d418e7":
+  version "0.0.0-development"
+  resolved "git://github.com/wighawag/routify.git#ed38d4353d80b86d00b0e71f030928ecf6d418e7"
   dependencies:
     "@sveltech/ssr" "^0.0.9"
     "@types/node" ">=4.2.0 < 13"

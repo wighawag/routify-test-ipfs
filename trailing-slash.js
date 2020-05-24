@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const EventEmitter = require('events')
 
 class Redirect extends EventEmitter {
@@ -22,9 +23,12 @@ class Redirect extends EventEmitter {
         }
         const firsSlashIndex = urlWithoutProtocol.indexOf("/");
         if (firsSlashIndex !== -1) {
-          const path = urlWithoutProtocol.slice(firsSlashIndex+1);
-          if (fs.existsSync(path)) {
-            const stats = fs.statSync(path);
+          let filepath = urlWithoutProtocol.slice(firsSlashIndex+1);
+          if (config.directory) {
+            filepath = path.join(config.directory, filepath);
+          }
+          if (fs.existsSync(filepath)) {
+            const stats = fs.statSync(filepath);
             if (stats.isDirectory()) {
               const length = redirectToUrl.length;
               if (length == 0) {
