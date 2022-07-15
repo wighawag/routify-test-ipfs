@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "@sveltech/routify": "git://github.com/wighawag/routify.git#ed38d4353d80b86d00b0e71f030928ecf6d418e7",
-    "svelte": "^3.20.1"
+    "svelte": "^3.49.0"
   }
 }
